@@ -1,0 +1,120 @@
+#logo{
+    width: 100px;
+}
+.search-section{
+border-radius: 40px;
+}
+.meniu{
+    margin-top: 10px;
+}
+.language{
+border-radius: 5px;
+}
+.style-nav-item{
+    border: 1px solid;
+    min-width: 100px;
+    text-align: center;
+    border-radius: 10px;
+}
+.app-menu-w{
+    max-width: 25%;
+    min-width: 25%;
+    border: 1px solid;
+}
+.app-product-w{
+    min-width: 75%;
+    max-width: 75%;
+    border: 1px solid;
+}
+
+.app-card{
+    width: 100%;
+
+
+}
+
+.app-card-body{
+
+}
+.img-wrap {
+    text-align: center;
+    display: block;
+}
+
+.card .img-wrap {
+    overflow: hidden;
+}
+.price-wrap {
+    letter-spacing: -0.7px;
+    margin-left: 15px;
+}
+
+.price {
+    font-weight: 600;
+    color: #212529;
+}
+.price-old {
+    color: #969696;
+    margin-left: 3px;
+    font-size: 85%;
+}
+.title{
+    text-decoration: none
+}
+
+.navigationBar{
+    background-color: #5eafe1;
+}
+.categoryBar{
+
+}
+.imgApp{
+
+}
+.cardApp{
+    width: 33%;
+}
+.main-category{
+    position: absolute;
+    left: 0;
+    top: 64px;
+    background: #fff;
+    z-index: 1;
+    width: 100%;
+    -webkit-box-shadow: 0px 5px 15px #0000000a;
+    -moz-box-shadow: 0px 5px 15px #0000000a;
+    box-shadow: 0px 5px 15px #0000000a;
+}
+.cardImgApp{
+    max-height: 150px;
+    min-height: 150px;
+    object-fit: scale-down;
+}
+.cardTitleApp{
+    font-size: small;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+.cardTextApp{
+    font-size: small;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+.shopNowApp{
+    font-size: small;
+}
+.priceApp{
+    font-size: small;
+    color: #19c513;
+}
+
+.footerApp{
+    background-color: #5d5b5b;
+}
+

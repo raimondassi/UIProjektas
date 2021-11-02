@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UiProjektas</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--    <link rel="stylesheet" href="css/all.css">-->
+    <link rel="stylesheet" href="resources/flag-icon.min.css">
+    <link rel="stylesheet" href="css/footers.css">
+
+
+</head>
+<body>
+
+<select class="language">
+    <a href="#lt">
+        <option languagePicker='<span class="flag-icon flag-icon-lt"></span> Lintuanian'>Lietuviskai</option>
+    </a>
+    <a href="#en">
+        <option languagePicker='<span class="flag-icon flag-icon-en"></span> English'>English</option>
+    </a>
+</select>
+
+
+<div class="container">
+    <div class="search-section d-flex  ">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <img id="logo" src="img/logo.png" class="img-thumbnail" alt="R do stuff">
+        </button>
+        <div class="input-group m-auto h-25">
+            <button id="categoryName" class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Category
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item searchCategory" href="#">men's clothing</a></li>
+                <li><a class="dropdown-item" href="#">jewelery</a></li>
+                <li><a class="dropdown-item" href="#">electronics</a></li>
+                <li><a class="dropdown-item" href="#">women's clothing</a></li>
+            </ul>
+            <input type="text" class="form-control" id="searchText" aria-label="Text input with dropdown button">
+
+            <button type="button" class="btn btn-outline-primary" id="searchButton">
+                <i class="fas fa-search"></i> Search
+            </button>
+        </div>
+    </div>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary opacity-50">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Product categories</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a id="mensCategory" class="nav-link active"  aria-current="page" href="#">men's clothing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="jeweleryCategory" class="nav-link active" aria-current="page" href="#">jewelery</a>
+                        </li>
+                        <li  class="nav-item">
+                            <a id="electronicsCategory" class="nav-link active" aria-current="page" href="#">electronics</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="womenCategory" class="nav-link active" aria-current="page" href="#">women's clothing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="d-flex pt-2">
+        <div class="app-menu-w">
+            <ul class="nav nav-tabs">
+                <div class="row">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                           aria-expanded="false">Discounts</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Membership</a></li>
+                            <li><a class="dropdown-item" href="#">Discount card</a></li>
+                            <li><a class="dropdown-item" href="#">Quantity discount</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">All other discounts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="html/deliveries.html">Deliveries</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Payment methods</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+<!--        App products-->
+        <div class="row row-cols-1 row-cols-md-4 g-4" id="cardList">
+        </div>
+    </div>
+
+
+    <!--Shoping cart section-->
+    <nav class="navbar fixed-bottom ">
+        <div class="row">
+            <div class="col">
+                <button type="button" class="btn btn-primary">Cart (<span class="totalCountApp"></span>)</button>
+                <button class="clearCountApp btn btn-danger">Clear Cart</button></div>
+        </div>
+    </nav>
+<!--    Shopping cart section end-->
+
+    <!--    Footer-->
+    <footer class="py-3 my-4 ">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3 footerApp">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2021 Company, Inc</p>
+    </footer>
+</div>
+
+<div id="allProducts"></div>
+
+<script src="bootstrap/js/bootstrap.bundle.js"></script>
+<script src="resources/jquery-3.6.0.js"></script>
+<script src="js/app.js"></script>
+<script src="js/shoppingCart.js"></script>
+
+</body>
+</html>
